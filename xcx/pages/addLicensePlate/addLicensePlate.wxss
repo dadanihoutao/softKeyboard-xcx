@@ -1,0 +1,126 @@
+.addLicensePlate {
+    width: 100%;
+}
+.addLicensePlate .header {
+    text-align: center;
+    font-size: 36rpx;
+    color: #999999;
+    padding: 30rpx 0;
+}
+.addLicensePlate .numBox {
+    width: 100%;
+}
+.addLicensePlate .numBox .ordinary{
+    background-color: #4590e1;
+}
+.addLicensePlate .numBox .newEnergy {
+    background-color: #31ddad;
+}
+.addLicensePlate .numBox .newEnergy,
+.addLicensePlate .numBox .ordinary{
+    width: 660rpx;
+    margin: 0 auto;
+    border-radius: 14rpx;
+    position: relative;
+    padding: 20rpx;
+}
+.addLicensePlate .numBox .newEnergy .whiteBorder,
+.addLicensePlate .numBox .ordinary .whiteBorder{
+    border: 6rpx solid #ffffff;
+    border-radius: 10rpx;
+    padding: 100rpx 0;
+}
+.addLicensePlate .numBox .newEnergy .nums,
+.addLicensePlate .numBox .ordinary .nums{
+    display: flex;
+    justify-content: center;
+    margin: 0 10rpx;
+    position: relative;
+}
+.addLicensePlate .numBox .newEnergy .nums .item,
+.addLicensePlate .numBox .ordinary .nums .item{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #ffffff;
+    margin: 0 10rpx;
+}
+
+.addLicensePlate .numBox .newEnergy .nums .item:nth-of-type(2),
+.addLicensePlate .numBox .ordinary .nums .item:nth-of-type(2){
+    margin-right: 20rpx;
+}
+.addLicensePlate .numBox .newEnergy .nums .item:nth-of-type(3)
+.addLicensePlate .numBox .ordinary .nums .item:nth-of-type(3){
+    margin-left: 20rpx;
+}
+
+
+.addLicensePlate .numBox .ordinary .nums .item{
+    background-color: #6fa6e7;
+}
+.addLicensePlate .numBox .newEnergy .nums .item{
+    background-color: #5ee1bf;
+}
+.addLicensePlate .numBox .newEnergy .nums .active ,
+.addLicensePlate .numBox .ordinary .nums .active {
+    border: 4rpx solid #ffffff;
+}
+.addLicensePlate .numBox .newEnergy .nums .point ,
+.addLicensePlate .numBox .ordinary .nums .point{
+    width: 10rpx;
+    height: 10rpx;
+    background-color: #ffffff;
+    border-radius: 50rpx;
+    margin-top: 25rpx;
+}
+.addLicensePlate .numBox .nums .tlPoint,
+.addLicensePlate .numBox .nums .trPoint{
+    width: 20rpx;
+    height: 20rpx;
+    background-color: #ffffff;
+    border-radius: 50rpx;
+    position: absolute;
+    top: -80rpx;
+}
+.addLicensePlate .numBox .nums .tlPoint {
+    left: 140rpx;
+}
+.addLicensePlate .numBox .nums .trPoint {
+    right: 140rpx;
+}
+.addLicensePlate .numBox .nums .blPoint,
+.addLicensePlate .numBox .nums .brPoint{
+    width: 40rpx;
+    height: 10rpx;
+    background-color: #ffffff;
+    border-radius: 50rpx;
+    position: absolute;
+    bottom: -80rpx;
+}
+.addLicensePlate .numBox .nums .blPoint {
+    left: 130rpx;
+}
+.addLicensePlate .numBox .nums .brPoint {
+    right: 130rpx;
+}
+.addLicensePlate .numBox .ordinary .nums .point {
+    position: absolute;
+    left: 195rpx;
+}
+.addLicensePlate .numBox .newEnergy .nums .point{
+    position: absolute;
+    left: 160rpx;
+}
+.addLicensePlate .numBox .toggle {
+    width: 100%;
+    margin:  20rpx auto;
+    text-align: center;
+}
+.addLicensePlate .submit {
+    width: 700rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}

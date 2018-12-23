@@ -1,0 +1,45 @@
+<view class="addLicensePlate">
+    <view class="header">请填写真实有效的车牌号</view>
+    <view class="numBox">
+        <view class="ordinary" wx:if="{{!isDefault}}">
+            <view class="whiteBorder">
+                <view class="nums">             
+                    <text wx:for="{{numLen}}" wx:for-index="index" wx:key="{{index}}"  class="item {{index === idx ? 'active' : ''}}">{{ result[index] }}</text>
+                    <text class="point"></text>
+                    <text class="tlPoint"></text>
+                    <text class="trPoint"></text>
+                    <text class="blPoint"></text>
+                    <text class="brPoint"></text>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="newEnergy">
+            <view class="whiteBorder">
+                <view class="nums">
+                    <text wx:for="{{numLen}}" wx:for-index="index" wx:key="{{index}}"  class="item {{index === idx ? 'active' : ''}}">{{ result[index] }}</text>
+                    <view class="point"></view>
+                    <text class="tlPoint"></text>
+                    <text class="trPoint"></text>
+                    <text class="blPoint"></text>
+                    <text class="brPoint"></text>
+                </view>
+            </view>
+        </view>
+        <view class="toggle">
+            <checkbox-group bindchange="checkboxChange">
+                <label class="checkbox">
+                    <checkbox color="#ff4013" value="1" checked="{{isDefault}}" />新能源车牌
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+    <button class="submit" type="primary">确认</button>
+    <view class="keyboard">
+        <softKeyboard 
+            bind:handlekeyClick="_handleKeyClick"
+            bind:handleDeleteClick="_handleDeleteClick"
+            bind:handleToggleClick="_handleToggleClick"
+            isCityKeyboard="{{isCityKeyboard}}"
+        ></softKeyboard>
+    </view>
+</view>

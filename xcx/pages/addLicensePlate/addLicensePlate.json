@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "添加车牌",
+    "usingComponents": {
+        "softKeyboard": "/components/softKeyboard/softKeyboard"
+      }
+}
+
